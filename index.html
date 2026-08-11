@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Baiano Campus Remanso - Inovação, Ciência e Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <!-- SVG com a Logo Oficial e identificação do Campus Remanso -->
+                <svg class="logo-svg" viewBox="0 0 260 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Grade de quadrados da marca IF -->
+                    <rect x="5" y="5" width="13" height="13" rx="3" fill="#2E7D32"/>
+                    <rect x="22" y="5" width="13" height="13" rx="3" fill="#C62828"/>
+                    <rect x="5" y="22" width="13" height="13" rx="3" fill="#2E7D32"/>
+                    <rect x="22" y="22" width="13" height="13" rx="3" fill="#2E7D32"/>
+                    <rect x="5" y="39" width="13" height="13" rx="3" fill="#2E7D32"/>
+                    <rect x="22" y="39" width="13" height="13" rx="3" fill="#2E7D32"/>
+                    
+                    <!-- Textos da Marca Institucional -->
+                    <text x="45" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="14" fill="#1B4D3E" letter-spacing="-0.2">INSTITUTO FEDERAL</text>
+                    <text x="45" y="37" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="13" fill="#2E7D32" letter-spacing="0.5">Baiano</text>
+                    <text x="45" y="52" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11" fill="#C62828" letter-spacing="0.8">Campus Remanso</text>
+                </svg>
+            </div>
+            <nav class="nav-links">
+                <a href="#inicio" class="active">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#cursos">Cursos</a>
+            </nav>
+            <div class="nav-actions">
+                <span class="status-pill"><span class="pulse-dot"></span> GitHub Pages Live</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-icon">💡</span>
+                <span>Atividade Prática • Computação em Nuvem</span>
+            </div>
+            <h1>Educação Pública, <br><span class="gradient-text">Inovação e Futuro.</span></h1>
+            <p>Seja bem-vindo ao portal de demonstração de deploy de site estático do <strong>IF Baiano - Campus Remanso</strong>. Transformando o conhecimento técnico em soluções para o mundo real.</p>
+            <div class="hero-buttons">
+                <a href="#cursos" class="btn btn-primary">Conhecer Cursos</a>
+                <button class="btn btn-secondary" onclick="testarInteracao()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Testar JS
+                </button>
+            </div>
+
+            <!-- Alert Banner (JS Response) -->
+            <div id="demoAlert" class="demo-alert hidden">
+                <div class="alert-content">
+                    <span class="alert-icon">⚡</span>
+                    <div>
+                        <strong>Script Executado!</strong>
+                        <p>O JavaScript cliente está rodando perfeitamente no seu servidor estático.</p>
+                    </div>
+                </div>
+                <button class="alert-close" onclick="fecharAlerta()">✕</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="sobre" class="section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Tecnologias & Conceitos</h2>
+                <p>Estrutura utilizada neste projeto de implantação em nuvem pública.</p>
+            </div>
+
+            <div class="grid-cards">
+                <div class="card">
+                    <div class="card-icon green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <h3>Static Web Hosting</h3>
+                    <p>Serviço de alta performance para distribuição direta de ativos estáticos (HTML5, CSS3, JS) sem dependência de banco de dados.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon red">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                    </div>
+                    <h3>Infraestrutura Nuvem</h3>
+                    <p>Disponibilidade global, baixo tempo de latência e custo simplificado através de hospedagem moderna em nuvem.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon dark">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3>Continuous Deploy</h3>
+                    <p>Atualização automatizada do site a cada novo commit realizado no repositório do projeto via GitHub Pages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos / Destaques -->
+    <section id="cursos" class="section bg-light">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Cursos & Oportunidades</h2>
+                <p>Formação pública e de qualidade no Campus Remanso.</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-item">
+                    <span class="course-tag">Eixo Informação & Comunicação</span>
+                    <h3>Informática / Redes de Computadores</h3>
+                    <p>Desenvolvimento de software, infraestrutura de redes, computação em nuvem e suporte técnico.</p>
+                </div>
+                <div class="course-item">
+                    <span class="course-tag alt">Eixo Recursos Naturais</span>
+                    <h3>Agropecuária / Agronomia</h3>
+                    <p>Inovação no campo, produção sustentável e integração de tecnologias no agronegócio regional.</p>
+                </div>
+                <div class="course-item">
+                    <span class="course-tag">Eixo Gestão & Negócios</span>
+                    <h3>Administração</h3>
+                    <p>Planejamento estratégico, empreendedorismo, gestão de processos e projetos de inovação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe / Footer info -->
+    <section class="team-section">
+        <div class="section-container">
+            <div class="team-box">
+                <div class="team-info">
+                    <h3>Atividade de Implantação em Nuvem</h3>
+                    <p>Projeto acadêmico desenvolvido para a disciplina de Computação em Nuvem / Redes.</p>
+                </div>
+                <div class="team-badge-group">
+                    <div class="team-pill">👨‍💻 Equipe de Estudantes</div>
+                    <div class="team-pill campus">📍 Campus Remanso</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <strong>Instituto Federal de Educação, Ciência e Tecnologia Baiano</strong>
+                <p>Campus Remanso • Educação pública, gratuita e de qualidade social.</p>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 IF Baiano Campus Remanso • Projeto Didático
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
